@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <title>Charmie</title>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-text">
+        <h1>🛒 Charmie 🌼 ⚝ ˚ ₊</h1>
+        <p>📣 โปรดอ่านก่อนกดซื้อ❕<br>
+        1. ของจริงอาจแตกต่างจากรูปตัวอย่างเล็กน้อย เช่น ขนาด และรูปทรงของกรอบ ในแต่ละชิ้น<br>
+        2. ต้องการเปลี่ยนข้อความหรือเปลี่ยนกรอบ สามารถแจ้งที่แชทได้เลยคับ!</p>
+    </div>
+</div>
+
+<div class="container">
+    <form id="orderForm" onsubmit="submitOrder(event)">
+        <!-- 1. เลือกกรอบ -->
+        <div class="section">
+            <h2>เลือกกรอบ</h2>
+            <div class="grid">
+                <div class="option-card" onclick="selectOption('frame', this, 25, false)">
+                    <input type="checkbox" name="frame" value="#F001">
+                    <img src="images/img_01.png">
+                    <p>#F001<br><span class="price-tag">25 ฿</span></p>
+                </div>
+
+                <div class="option-card" onclick="selectOption('frame', this, 25, false)">
+                    <input type="checkbox" name="frame" value="#F002">
+                    <img src="images/img_02.png">
+                    <p>#F002<br><span class="price-tag">25 ฿</span></p>
+                </div>
+
+                <div class="option-card" onclick="selectOption('frame', this, 25, false)">
+                    <input type="checkbox" name="frame" value="#F003">
+                    <img src="images/img_03.png">
+                    <p>#F003<br><span class="price-tag">25 ฿</span></p>
+                </div>
+
+                <div class="option-card" onclick="selectOption('frame', this, 25, false)">
+                    <input type="checkbox" name="frame" value="#F004">
+                    <img src="images/img_04.png">
+                    <p>#F004<br><span class="price-tag">25 ฿</span></p>
+                </div>
+
+                <div class="option-card" onclick="selectOption('frame', this, 25, false)">
+                    <input type="checkbox" name="frame" value="#F005">
+                    <img src="images/img_05.png">
+                    <p>#F005<br><span class="price-tag">25 ฿</span></p>
+                </div>
+
+                <div class="option-card" onclick="selectOption('frame', this, 25, false)">
+                    <input type="checkbox" name="frame" value="#F006">
+                    <img src="images/img_06.png">
+                    <p>#F006<br><span class="price-tag">25 ฿</span></p>
+                </div>
+
+                <div class="option-card" onclick="selectOption('frame', this, 25, false)">
+                    <input type="checkbox" name="frame" value="#F007">
+                    <img src="images/img_07.png">
+                    <p>#F007<br><span class="price-tag">25 ฿</span></p>
+                </div>
+
+                <div class="option-card" onclick="selectOption('frame', this, 25, false)">
+                    <input type="checkbox" name="frame" value="#F008">
+                    <img src="images/img_08.png">
+                    <p>#F008<br><span class="price-tag">25 ฿</span></p>
+                </div>
+
+                <div class="option-card" onclick="selectOption('frame', this, 25, false)">
+                    <input type="checkbox" name="frame" value="#F009">
+                    <img src="images/img_09.png">
+                    <p>#F009<br><span class="price-tag">25 ฿</span></p>
+                </div>
+
+                <div class="option-card" onclick="selectOption('frame', this, 25, false)">
+                    <input type="checkbox" name="frame" value="#F010">
+                    <img src="images/img_10.png">
+                    <p>#F010<br><span class="price-tag">25 ฿</span></p>
+                </div>
+
+                <div class="option-card" onclick="selectOption('frame', this, 25, false)">
+                    <input type="checkbox" name="frame" value="#F011">
+                    <img src="images/img_11.png">
+                    <p>#F011<br><span class="price-tag">25 ฿</span></p>
+                </div>
+
+                <div class="option-card" onclick="selectOption('frame', this, 25, false)">
+                    <input type="checkbox" name="frame" value="#F012">
+                    <img src="images/img_12.png">
+                    <p>#F012<br><span class="price-tag">25 ฿</span></p>
+                </div>
+
+                <div class="option-card" onclick="selectOption('frame', this, 25, false)">
+                    <input type="checkbox" name="frame" value="#F013">
+                    <img src="images/img_13.png">
+                    <p>#F013<br><span class="price-tag">25 ฿</span></p>
+                </div>
+
+                <div class="option-card" onclick="selectOption('frame', this, 25, false)">
+                    <input type="checkbox" name="frame" value="#F014">
+                    <img src="images/img_14.png">
+                    <p>#F014<br><span class="price-tag">25 ฿</span></p>
+                </div>
+
+                <div class="option-card" onclick="selectOption('frame', this, 25, false)">
+                    <input type="checkbox" name="frame" value="#F015">
+                    <img src="images/img_15.png">
+                    <p>#F015<br><span class="price-tag">25 ฿</span></p>
+                </div>
+
+                <div class="option-card" onclick="selectOption('frame', this, 25, false)">
+                    <input type="checkbox" name="frame" value="#F016">
+                    <img src="images/img_16.png">
+                    <p>#F016<br><span class="price-tag">25 ฿</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. บริการเสริม (เพิ่มกล่องใส่ +10 บาท) -->
+        <div class="section">
+            <div class="grid">
+                <div class="option-card" onclick="toggleBox(this)">
+                    <input type="checkbox" id="boxOption" name="box" value="กล่องใส่">
+                    <img src="images/img_17.png">
+                    <p>เพิ่มกล่องใส่<br><span class="price-tag">15 ฿</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. ข้อมูลลูกค้า -->
+        <div class="section">
+            <h2>ข้อมูลจัดส่ง</h2>
+            <div class="form-group"><label>ชื่อผู้รับ :</label><input type="text" id="customerName" required></div>
+            <div class="form-group"><label>เบอร์โทร :</label><input type="text" id="customerPhone"></div>
+            <div class="form-group"><label>ที่อยู่ :</label><textarea id="customerAddress" rows="3" placeholder="*ไม่จำเป็น*"></textarea></div>
+        </div>
+
+        <button type="submit" id="submitBtn" class="btn-submit">บันทึกข้อมูลและสร้างสลีป</button>
+        <div id="loadingText" style="display: none;">กดแล้วกรุณารอสักครู่น้า</div>
+    </form>
+
+    <!-- สลีป -->
+    <div id="slipResult" style="display: none;">
+        <h3 style="text-align: center;">ใบสรุปคำสั่งซื้อ</h3>
+        <p style="text-align: center; font-size: 0.8rem; color: green;">สั่งซื้อสำเร็จ!</p>
+        <hr style="border: 1px dashed #000;">
+        <div class="slip-item"><span>กรอบ:</span> <span id="slipFrame">-</span></div>
+        <div class="slip-item"><span>กล่องใส่:</span> <span id="slipBox">ไม่รับ</span></div>
+        <hr style="border: 1px dashed #000;">
+        <div class="slip-item"><span>ชื่อผู้รับ :</span> <span id="slipCustName">-</span></div>
+        <div class="slip-item"><span>เบอร์โทร :</span> <span id="slipCustPhone">-</span></div>
+        <div class="slip-item"><span>ที่อยู่ :</span> <span id="slipCustAddress">-</span></div>
+        <div class="slip-total"><span>ยอดรวมทั้งสิ้น:</span> <span id="slipTotal">0 ฿</span></div>
+    </div>
+</div>
+
+<div class="total-sticky">ราคารวม: <span id="runtimePrice">0</span> บาท</div>
+
+<script>
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx1ZxXKPt4SAk_79OIVd2TLjkD-UpBrY2MrzsARDF6n2y3Au7FiUCHXkeg3Dp2uKYLvzg/exec";
+
+    let selectedItems = {
+        frames: {},
+        charms: {}
+    };
+    let base64Image = ""; 
+
+    function selectOption(type, element, price, hasName) {
+        const input = element.querySelector('input');
+        
+        element.classList.toggle('selected');
+        input.checked = element.classList.contains('selected');
+
+        const value = input.value;
+        const groupKey = type === 'frame' ? 'frames' : 'charms';
+
+        if (input.checked) {
+            selectedItems[groupKey][value] = { price: price, qty: 1 };
+        } else {
+            delete selectedItems[groupKey][value];
+        }
+
+        updateTotalPrice();
+
+        if (type === 'frame') {
+            const nameInputGroup = document.getElementById('nameInputGroup');
+            const customNameInput = document.getElementById('customName');
+
+            const allSelectedCards = document.querySelectorAll('.option-card.selected');
+            let isAnyFrameNeedName = false;
+
+            allSelectedCards.forEach(card => {
+                if (card.getAttribute('onclick') && card.getAttribute('onclick').includes('true')) {
+                    isAnyFrameNeedName = true;
+                }
+            });
+
+            if (nameInputGroup && customNameInput) {
+                if (isAnyFrameNeedName) {
+                    nameInputGroup.style.display = 'block';
+                    customNameInput.required = true;
+                } else {
+                    nameInputGroup.style.display = 'none';
+                    customNameInput.required = false;
+                }
+            }
+        }
+    }
+
+    // ฟังก์ชันเลือก/ยกเลิกกล่องใส่ (+10 บาท)
+    function toggleBox(element) {
+        const input = element.querySelector('input');
+        element.classList.toggle('selected');
+        input.checked = element.classList.contains('selected');
+        updateTotalPrice();
+    }
+
+    function updateTotalPrice() {
+        let total = 0;
+        
+        for (let key in selectedItems.frames) {
+            total += selectedItems.frames[key].price * selectedItems.frames[key].qty;
+        }
+        for (let key in selectedItems.charms) {
+            total += selectedItems.charms[key].price * selectedItems.charms[key].qty;
+        }
+
+        // เพิ่มราคา 10 บาทหากเลือกกล่องใส่
+        const boxInput = document.getElementById('boxOption');
+        if (boxInput && boxInput.checked) {
+            total += 15;
+        }
+
+        document.getElementById('runtimePrice').innerText = total;
+        return total;
+    }
+
+    function previewImage(input) {
+        const preview = document.getElementById('imgPreview');
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                if (preview) {
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                }
+                base64Image = e.target.result; 
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function submitOrder(event) {
+        event.preventDefault();
+        
+        const selectedFramesList = Object.keys(selectedItems.frames).join(", ") || "ไม่ได้เลือกกรอบ";
+        const finalPrice = updateTotalPrice();
+        
+        if (finalPrice === 0) {
+            alert("กรุณาเลือกสินค้าอย่างน้อย 1 รายการก่อนสั่งซื้อ");
+            return;
+        }
+    
+        document.getElementById('submitBtn').disabled = true;
+        document.getElementById('loadingText').style.display = 'block';
+    
+        let inputNameValue = "ไม่ใส่ชื่อ";
+        const customNameEl = document.getElementById('customName');
+        if (customNameEl && customNameEl.value.trim() !== "") {
+            inputNameValue = customNameEl.value.trim();
+        }
+
+        // ตรวจสอบสถานะกล่องใส่
+        const isBoxChecked = document.getElementById('boxOption').checked;
+        const boxText = isBoxChecked ? "รับกล่อง (+10 ฿)" : "ไม่รับ";
+    
+        const orderData = {
+            frame: selectedFramesList,
+            box: boxText,
+            customName: inputNameValue, 
+            custName: document.getElementById('customerName').value,
+            custPhone: document.getElementById('customerPhone').value,
+            custAddress: document.getElementById('customerAddress').value,
+            totalPrice: finalPrice, 
+            image: base64Image
+        };
+    
+        fetch(SCRIPT_URL, {
+            method: "POST",
+            mode: "no-cors", 
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(orderData)
+        })
+        .then(() => {
+            document.getElementById('loadingText').style.display = 'none';
+            document.getElementById('submitBtn').disabled = false;
+            
+            // อัปเดตข้อมูลบนสลีป
+            document.getElementById('slipFrame').innerText = orderData.frame;
+            document.getElementById('slipBox').innerText = orderData.box;
+            document.getElementById('slipCustName').innerText = orderData.custName;
+            document.getElementById('slipCustPhone').innerText = orderData.custPhone;
+            document.getElementById('slipCustAddress').innerText = orderData.custAddress;
+            document.getElementById('slipTotal').innerText = orderData.totalPrice + ' ฿';
+            
+            document.getElementById('slipResult').style.display = 'block';
+            document.getElementById('slipResult').scrollIntoView({ behavior: 'smooth' });
+        })
+        .catch(error => {
+            alert("เกิดข้อผิดพลาดในการบันทึกข้อมูล กรุณาลองใหม่อีกครั้ง");
+            console.error(error);
+            document.getElementById('submitBtn').disabled = false;
+            document.getElementById('loadingText').style.display = 'none';
+        });
+    }
+
+    updateTotalPrice();
+</script>
+</body>
+</html>
